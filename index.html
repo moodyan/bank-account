@@ -8,7 +8,53 @@
     <title>Bank Account</title>
   </head>
   <body>
-
-
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+      <h1 class="display-3">Welcome to the Epicodus Credit Union</h1>
+      <p class="lead">Register a new account with us today! If you already have an Epicodus account, use our form to move some money around.</p>
+      </div>
+    </div>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="panel panel-default">
+              <div class="panel-heading">Register a new account:</div>
+              <div class="panel-body">
+                <form id="new-account-form">
+                  <label for="name">Name:</label>
+                  <input type="text" name="name">
+                  <p></p>
+                  <label for="initial">Initial Deposit:</label>
+                  <input type="number" name="initial">
+                  <p></p>
+                  <button type="submit">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="panel panel-default">
+              <div class="panel-heading">Deposit or withdraw funds:</div>
+              <div class="panel-body">
+                <form id="transaction-form">
+                  <label for="withdraw">Withdraw Amount ($):</label>
+                  <input type="number" name="withdraw" value="0">
+                  <p></p>
+                  <label for="deposit">Deposit Amount ($):</label>
+                  <input type="number" name="deposit" value="0">
+                  <p></p>
+                  <button type="submit">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div id="info">
+        <h2></h2>
+        <h3></h3>
+      </div>
+    </div>
   </body>
 </html>
